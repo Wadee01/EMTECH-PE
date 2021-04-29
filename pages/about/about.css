@@ -13,3 +13,6 @@ text-align: center;
 ion-title{
 font-family: initial;
 }
+ion-label{
+color:aliceblue;
+}
