@@ -6,9 +6,14 @@ color: aliceblue;
 text-align: center;
 font-family: initial;
 }
-p{
-color: #000000;
+h3{
+color: aliceblue;
 text-align: center;
+font-family: initial;
+}
+p{
+color: aliceblue;
+
 }
 ion-title{
 font-family: initial;
