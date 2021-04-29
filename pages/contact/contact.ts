@@ -11,9 +11,17 @@ height: number;
 weight: number;
 age: number;
 BMR: number;
+DCI: number;
 male: number;
 female: number;
+A: number;
+B: number;
+C: number;
+D: number;
+E: number;
+F: number;
 gender: string;
+lifestyle: string;
 cicMessage: string;
   constructor(public navCtrl: NavController) {
 
@@ -32,5 +40,57 @@ else if (this.gender= "f") {
 }
 
 }
+calculateDCI(){
+this.DCI = this.BMR*(this.A + this.B +this.C +this.D +this.E +this.F);
+this.DCI = parseFloat(this.DCI.toFixed(2));
 
+if (this.lifestyle = "sedentary") {
+ this.A = 1.2
+ this.B = 0
+ this.C = 0
+ this.D = 0
+ this.E = 0
+ this.F = 0
+}
+else if (this.lifestyle= "slightly_active") {
+ this.A = 0
+ this.B = 1.4
+ this.C = 0
+ this.D = 0
+ this.E = 0
+ this.F = 0
+}
+else if (this.lifestyle= "moderately_active") {
+ this.A = 0
+ this.B = 0
+ this.C = 1.6
+ this.D = 0
+ this.E = 0
+ this.F = 0
+}
+else if (this.lifestyle= "very_active") {
+ this.A = 0
+ this.B = 0
+ this.C = 0
+ this.D = 1.75
+ this.E = 0
+ this.F = 0
+}
+else if (this.lifestyle= "extra_active") {
+ this.A = 0
+ this.B = 0
+ this.C = 0
+ this.D = 0
+ this.E = 2.0
+ this.F = 0
+}
+else if (this.lifestyle= "professional_athelete") {
+ this.A = 0
+ this.B = 0
+ this.C = 0
+ this.D = 0
+ this.E = 0
+ this.F = 2.3
+}
+}
 }

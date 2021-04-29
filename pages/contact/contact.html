@@ -47,7 +47,15 @@
 </button>
 
 <ion-item *ngIf="BMR">
-  <p>Your BMR is: {{BMR}} </p>
+  <p>Your Basal Metabolic Rate is: {{BMR}} </p>
+</ion-item>
+
+<button ion-button color="primary" (click)="calculateDCI()">
+  Calculate DCI
+</button>
+
+<ion-item *ngIf="DCI">
+  <p>Your Daily Calorie Intake is: {{DCI}} </p>
 </ion-item>
 
 </ion-content>
