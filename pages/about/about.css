@@ -1,0 +1,15 @@
+ion-content {
+  background: linear-gradient(to right, #000000, #434343);
+}
+h2{
+color: aliceblue;
+text-align: center;
+font-family: initial;
+}
+p{
+color: #000000;
+text-align: center;
+}
+ion-title{
+font-family: initial;
+}
