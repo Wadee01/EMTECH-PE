@@ -42,8 +42,12 @@
   <ion-input type="number" [(ngModel)]="age"></ion-input>
 </ion-item>
 
-<button ion-button color="primary" (click)="calculateDCI()">
-  Calculate DCI
+<button ion-button color="primary" (click)="calculateBMR()">
+  Calculate BMR
 </button>
+
+<ion-item *ngIf="BMR">
+  <p>Your BMR is: {{BMR}} </p>
+</ion-item>
 
 </ion-content>
