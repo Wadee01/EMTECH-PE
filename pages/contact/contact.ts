@@ -7,9 +7,15 @@ import { NavController } from 'ionic-angular';
   styleUrls: ['contact.css']
 })
 export class ContactPage {
-
+eight: number;
+weight: number;
+age: number;
+cicMessage: string;
   constructor(public navCtrl: NavController) {
 
    }
+calculateCIC(){
+
+}
 
 }
