@@ -7,14 +7,22 @@ import { NavController } from 'ionic-angular';
   styleUrls: ['contact.css']
 })
 export class ContactPage {
-eight: number;
+height: number;
 weight: number;
 age: number;
+BMR: number;
+gender: string;
 cicMessage: string;
   constructor(public navCtrl: NavController) {
 
    }
 calculateCIC(){
+if (this.gender = "m") {
+ this.BMR = 10 * this.weight + 6.25 * this.height - 5 * this.age + 5;
+}
+else if (this.gender= "f") {
+  this.BMR = 10 * this.weight + 6.25 * this.height - 5 * this.age - 161;
+}
 
 }
 
