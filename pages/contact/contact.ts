@@ -14,12 +14,16 @@ BMR: number;
 DCI: number;
 male: number;
 female: number;
+carbs: number;
+protein: number;
+fats: number;
 A: number;
 B: number;
 C: number;
 D: number;
 E: number;
 F: number;
+
 gender: string;
 lifestyle: string;
 cicMessage: string;
@@ -43,6 +47,12 @@ else if (this.gender= "f") {
 calculateDCI(){
 this.DCI = this.BMR*(this.A + this.B +this.C +this.D +this.E +this.F);
 this.DCI = parseFloat(this.DCI.toFixed(2));
+this.carbs = this.DCI*0.600;
+this.carbs = parseFloat(this.carbs.toFixed(2));
+this.protein = this.DCI*0.125;
+this.protein = parseFloat(this.protein.toFixed(2));
+this.fats = this.DCI*0.275;
+this.fats = parseFloat(this.carbs.toFixed(2));
 
 if (this.lifestyle = "sedentary") {
  this.A = 1.2
