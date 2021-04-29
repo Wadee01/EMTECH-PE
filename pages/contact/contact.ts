@@ -11,17 +11,22 @@ height: number;
 weight: number;
 age: number;
 BMR: number;
+male: number;
+female: number;
 gender: string;
 cicMessage: string;
   constructor(public navCtrl: NavController) {
 
    }
 calculateCIC(){
+this.BMR = (10 * this.weight + 6.25 * this.height - 5 * this.age + this.male - this.female);
 if (this.gender = "m") {
- this.BMR = 10 * this.weight + 6.25 * this.height - 5 * this.age + 5;
+ this.male = 5
+ this.female = 0
 }
 else if (this.gender= "f") {
-  this.BMR = 10 * this.weight + 6.25 * this.height - 5 * this.age - 161;
+ this.male = 0
+ this.female = 161
 }
 
 }

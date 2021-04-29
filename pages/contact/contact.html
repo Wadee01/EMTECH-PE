@@ -15,24 +15,35 @@
     </ion-select>
 </ion-item>
 
+<ion-item>
+    <ion-label color="dark"> Lifestyle </ion-label>
+    <ion-select interface="popover" [(ngModel)]="lifestyle">
+      <ion-option value="sedentary">little or no exercise</ion-option>
+      <ion-option value="slightly_active">light exercise or sports 1-2 days/week</ion-option>
+      <ion-option value="moderately_active">moderate exercise or sports 2-3 days/week</ion-option>
+      <ion-option value="very_active">hard exercise or sports 4-5 days/week</ion-option>
+      <ion-option value="extra_active">very hard exercise, physical job or sports 6-7 days/week)</ion-option>
+      <ion-option value="professional_athlete">professional athlete</ion-option>
+    </ion-select>
+</ion-item>
+
  <ion-item>
-  <ion-label>Height in centimeter:</ion-label>
+  <ion-label color="dark">Height in centimeter:</ion-label>
   <ion-input type="number" [(ngModel)]="height"></ion-input>
 </ion-item>
 
  <ion-item>
-  <ion-label>Weight in kilogram:</ion-label>
+  <ion-label color="dark">Weight in kilogram:</ion-label>
   <ion-input type="number" [(ngModel)]="weight"></ion-input>
 </ion-item>
 
  <ion-item>
-  <ion-label>Age</ion-label>
+  <ion-label color="dark">Age</ion-label>
   <ion-input type="number" [(ngModel)]="age"></ion-input>
 </ion-item>
 
-<button ion-button color="primary" (click)="calculateCIC()">
-  Calculate
+<button ion-button color="primary" (click)="calculateDCI()">
+  Calculate DCI
 </button>
-
 
 </ion-content>
