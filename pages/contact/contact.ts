@@ -52,7 +52,7 @@ this.carbs = parseFloat(this.carbs.toFixed(2));
 this.protein = this.DCI*0.125;
 this.protein = parseFloat(this.protein.toFixed(2));
 this.fats = this.DCI*0.275;
-this.fats = parseFloat(this.carbs.toFixed(2));
+this.fats = parseFloat(this.fats.toFixed(2));
 
 if (this.lifestyle = "sedentary") {
  this.A = 1.2
